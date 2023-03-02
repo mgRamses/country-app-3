@@ -12,7 +12,7 @@ We want you to create a search country flags tool:
 ## Considerations
 - **Please spend max 4 hours in this assestment**
 - You can use this template as starting point, just run `yarn install` and `yarn dev`, then you can start to code
-- The endpoint where you will make the requests it's `http://localhost:8999/countries`, this endpoint supports the following params:
+- The endpoint where you will make the requests it's `/countries`, this endpoint supports the following params:
     - `query`: optional, to filter the countries
     - `page`: optional, this helps to select the desired page
     - `page_size`: optional, set the max amount of countries
