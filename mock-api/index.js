@@ -13,7 +13,6 @@ function getCountries(query, page, page_size) {
   const country_list = [];
 
   for (var i = 0; i < countries.length; i++) {
-      console.log(countries[i])
     if (query === "" || countries[i].name.toLowerCase().includes(query.toLowerCase())) {
       country_list.push(countries[i]);
     }
