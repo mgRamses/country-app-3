@@ -23,7 +23,10 @@ function getCountries(query, page, page_size) {
     }
   }
 
-  return country_list.slice((page - 1) * page_size, page * page_size);
+  return {
+    results: country_list.slice((page - 1) * page_size, page * page_size),
+    size: country_list.length,
+  };
 }
 function simulateErrors(req, res, next) {
   if (Math.random() <= ERROR_RATE) {
@@ -46,7 +49,11 @@ app.get("/countries", (req, res) => {
   const { query = "", page = 1, page_size = 10 } = req.query;
 
   // return the filtered list
-  res.json(getCountries(query, page, page_size));
+  res.json({
+    page,
+    page_size,
+    ...getCountries(query, page, page_size)
+  });
 });
 
 app.listen(port, () => {
