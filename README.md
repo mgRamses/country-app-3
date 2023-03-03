@@ -34,5 +34,5 @@ It supports the following query search parameters:
 ## Evaluation criteria
 
 - html: Use the proper tags depending on their use
-- css: We want to see your ability to layout elements and make them look nice. **You must write your own css classes**
+- css: We want to see your ability to layout elements and present the information in a well structured way. **You must write your own css classes**
 - js: We would like to know how familiar you are with ReactJS and your ability to use REST Apis and handling real world conditions.
