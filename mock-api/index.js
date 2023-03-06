@@ -25,7 +25,7 @@ function getCountries(query, page, page_size) {
 
   return {
     results: country_list.slice((page - 1) * page_size, page * page_size),
-    size: country_list.length,
+    total: country_list.length,
   };
 }
 function simulateErrors(req, res, next) {
