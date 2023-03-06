@@ -33,6 +33,6 @@ It supports the following query search parameters:
 
 ## Evaluation criteria
 
-- html: Use the proper tags depending on their use
-- css: We want to see your ability to layout elements and present the information in a well structured way, we wont judge the aesthetics design we just want to evaluate your layout and thecnical skills. **You must write your own css classes**
-- js: We would like to know how familiar you are with ReactJS and your ability to use REST Apis and handling real world conditions.
+- html: Use of appropriate html elements and behaviors.
+- css: Layout of elements and information being easy to understand. We will not judge the design aesthetics. **You must write your own css classes**
+- js: Familiarity with ReactJS and ability to use REST Apis and handling real world conditions (errors, slow responses etc).
