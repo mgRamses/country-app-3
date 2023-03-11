@@ -5,13 +5,14 @@ This is a take home assignment to show your frontend skills, the api provided si
 ## Deliverable
 
 We want you to create a country listing page with a search box that will filter the list.
-- Horizontally centered contents
-- Search input box
-- List of countries. Each country should show it's name, capital and their flag
-- Pagination
+- Search input box and button to trigger search
+- List of countries based on the search input
+  - Each country should show it's name, capital and their flag
+  - Pagination of results
+- Page contents should be in a horizontally centered container
 
 The styling is up to you, please use your judgement.
-Please use your own css classes, but you are welcome to use a minimal prebuilt sheet like [normalize.css](https://necolas.github.io/normalize.css/).
+Please use your own css classes, but you are allowed to use a minimal prebuilt sheet like [normalize.css](https://necolas.github.io/normalize.css/).
 
 ## Guidelines
 
@@ -21,9 +22,11 @@ Prerequisites:
   - [NodeJS](https://nodejs.org/)
   - [Yarn](https://yarnpkg.com/getting-started/install)
 
-This is the template we provide you as a starting point.
-To get started just run `yarn install` and `yarn dev`
-Your coding starting point is `src/App.jsx`
+This template provided has everything you need to get started.
+- `yarn install` should install all dependencies
+- `yarn dev` should start your local environment
+
+Your react code starting point is `src/App.jsx`
 
 The API endpoint for querying countries is available at `/countries`.
 It supports the following query search parameters:
@@ -34,5 +37,6 @@ It supports the following query search parameters:
 ## Evaluation criteria
 
 - html: Use of appropriate html elements and behaviors.
-- css: Layout of elements and information being easy to understand. We will not judge the design aesthetics. **You must write your own css classes**
+- css: Layout of elements and information being easy to understand. We will not judge the design aesthetics.
+  **You must write your own css classes**
 - js: Familiarity with ReactJS and ability to use REST Apis and handling real world conditions (errors, slow responses etc).
