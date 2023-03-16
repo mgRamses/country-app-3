@@ -20,19 +20,52 @@ Please use your own css classes, but you are allowed to use a minimal prebuilt s
 
 Prerequisites:
   - [NodeJS](https://nodejs.org/)
-  - [Yarn](https://yarnpkg.com/getting-started/install)
 
 This template provided has everything you need to get started.
-- `yarn install` should install all dependencies
-- `yarn dev` should start your local environment
+- `npm install` should install all dependencies
+- `npm start` should start your local environment
 
 Your react code starting point is `src/App.jsx`
 
-The API endpoint for querying countries is available at `/countries`.
+### `/countries` endpoint
+The API endpoint for querying countries is available at `http://localhost:5173//countries`.
 It supports the following query search parameters:
   - `query`: optional, default value: `""`, to filter the countries
   - `page`: optional, default value: `1`, this helps to select the desired page
   - `page_size`: optional, default value: `10`, set the max amount of countries
+#### Example
+```
+GET /countries?query=us&page_size=2 HTTP/1.1
+Host: localhost:5173
+```
+Response
+```json
+{
+    "page": 1,
+    "page_size": "2",
+    "results": [
+        {
+            "capital": "Canberra",
+            "code": "au",
+            "continent": "Oceania",
+            "flag_1x1": "flags/1x1/au.svg",
+            "flag_4x3": "flags/4x3/au.svg",
+            "iso": true,
+            "name": "Australia"
+        },
+        {
+            "capital": "Vienna",
+            "code": "at",
+            "continent": "Europe",
+            "flag_1x1": "flags/1x1/at.svg",
+            "flag_4x3": "flags/4x3/at.svg",
+            "iso": true,
+            "name": "Austria"
+        }
+    ],
+    "total": 8
+}
+```
 
 ## Evaluation criteria
 

@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node mock-api/index.js & vite",
+    "dev": " vite",
+    "serve": "node mock-api/index.js",
+    "start": "concurrently --kill-others \"npm:dev\" \"npm:serve\"",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -17,6 +19,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "concurrently": "^7.6.0",
     "vite": "^4.1.0"
   }
 }
