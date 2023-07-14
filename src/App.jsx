@@ -17,7 +17,7 @@ const CountriesList = ({countries, searchWord, loading}) => {
           {countries.map(countrie => 
             <div className='countries-list'>
               <div>
-                <img src={`http://127.0.0.1:5173/${countrie.flag_1x1}`} width='50' alt="" />
+                <img src={`https://mock-2-d1101c0b6853.herokuapp.com/${countrie.flag_1x1}`} width='50' alt="" />
               </div>
               <div className='names'>
                 <div>{countrie.name}</div>
