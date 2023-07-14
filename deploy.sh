@@ -17,4 +17,4 @@ git checkout -b main
 git add -A git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:mgramses/country-app-2.git main:gh-pages
+# git push -f git@github.com:mgramses/country-app-3.git main:gh-pages

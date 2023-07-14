@@ -10,5 +10,5 @@ export default defineConfig({
       '/flags': 'http://localhost:8999'
     }
   },
-  base: '/country-app-2'
+  base: '/country-app-3'
 })
