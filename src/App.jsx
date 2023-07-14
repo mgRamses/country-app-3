@@ -7,7 +7,7 @@ const CountriesList = ({countries, searchWord, loading}) => {
     <div className='countries-container'>
       {!searchWord && <div className='icon-container'>
         <img src={WorldLogo} width='160' height='160' alt="" />
-        <div className='text-header'>Country Search</div>
+        <div className='text-header'>Country Search 3</div>
       </div>}
       <div className='display-list-container'>
         {searchWord && <div className='search-word'>Search: <b>"{searchWord}"</b></div>}
