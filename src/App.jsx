@@ -29,7 +29,7 @@ const CountriesList = ({countries, searchWord, loading}) => {
       </div>
       {loading &&
         <div className='loadingLayer'>
-          <span className='loader'></span>
+          <span className='loader'>.</span>
         </div>
       }
    </div>
