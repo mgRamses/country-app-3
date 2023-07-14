@@ -49,7 +49,7 @@ function App() {
     if(query !== ''){
       setLoading(true)
       try {
-        const data = await fetch(`http://localhost:5173/countries?query=${query}&page=${currentPage}&page_size=${pageSize}`)
+        const data = await fetch(`https://mock-2-d1101c0b6853.herokuapp.com/countries?query=${query}&page=${currentPage}&page_size=${pageSize}`)
           .then(response => {
             setLoading(false)
             return response.json()
